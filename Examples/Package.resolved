@@ -1,5 +1,5 @@
 {
-  "originHash" : "c33c41038cbe117789d2bdb753e33b28d4c16a91137bf368476d8435a3179d04",
+  "originHash" : "70a0e814c0b8c26d756200f4ec36bb2028fc59e2841cfbda92bc4d1236f12dc3",
   "pins" : [
     {
       "identity" : "jpeg",
@@ -60,8 +60,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/stackotter/swift-macro-toolkit",
       "state" : {
-        "revision" : "e706aa98bc28f82677923f7b8f560bba6f90fac2",
-        "version" : "0.6.0"
+        "revision" : "569627091e1fbb8745d691aeeb008e7247dedb7c",
+        "version" : "0.6.1"
       }
     },
     {
@@ -115,7 +115,7 @@
       "location" : "https://github.com/WolfDan/SwiftGtk4LayerShell",
       "state" : {
         "branch" : "main",
-        "revision" : "3965fd204203318d19e4fe94a164959c358d1697"
+        "revision" : "7a5a58adfa397d9dba7b74db646a45b1e56120b7"
       }
     },
     {

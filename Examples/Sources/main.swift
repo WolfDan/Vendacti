@@ -1,30 +1,25 @@
-import DefaultBackend
+import GtkBackend
 import SwiftCrossUI
 import Vendacti
 
-#if canImport(SwiftBundlerRuntime)
-    import SwiftBundlerRuntime
-#endif
-
 @main
-@HotReloadable
 struct BarApp: App {
     @State var count = 0
 
+    var backend = GtkBackend(appIdentifier: "com.vendacti.BarApp")
+
     var body: some Scene {
         LayerShellGroup("vendacti_window_0") {
-            #hotReloadable {
-                HStack(spacing: 20) {
-                    Button("-") {
-                        count -= 1
-                    }
-                    Text("Count: \(count)")
-                    Button("+") {
-                        count += 1
-                    }
+            HStack(spacing: 20) {
+                Button("-") {
+                    count -= 1
                 }
-                .padding()
+                Text("Count: \(count)")
+                Button("+") {
+                    count += 1
+                }
             }
+            .padding()
         }
         .monitor(0)
         .anchor([.left, .top, .right])
